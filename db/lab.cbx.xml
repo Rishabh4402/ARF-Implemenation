@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lab">
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|controlunit:inst53|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_vcm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|controlunit:inst53|lpm_divide:Mod1" CBX_FILE_NAME="lpm_divide_85m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|mul:inst21|lpm_mult:Mult0" CBX_FILE_NAME="mult_l8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|controlunit:inst53|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_65m.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|mul:inst19|lpm_mult:Mult0" CBX_FILE_NAME="mult_l8t.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|arf|mul:inst20|lpm_mult:Mult0" CBX_FILE_NAME="mult_l8t.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

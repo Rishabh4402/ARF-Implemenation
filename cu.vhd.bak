@@ -1,0 +1,24 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+entity cu is
+    Port ( clk : in  STD_LOGIC;
+           a : out std_logic_vector(3 downto 0);
+			  b : out std_logic_vector(2 downto 0);
+			  c:  out std_logic_vector(1 downto 0);
+			  m1 : out std_logic;
+			  m2 :out std_logic;
+			  m3 :out std_logic;
+			  a1 :out std_logic;
+end cu;
+
+architecture Behavioral of cu is
+variable count : integer range 0 to 14;
+begin
+process (clk, D)
+begin
+    if (EN = '1') then
+        Q <= D;
+    end if;
+end process;
+
+end Behavioral;

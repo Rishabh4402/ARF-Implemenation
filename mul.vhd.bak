@@ -1,0 +1,21 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity adder16 is
+    Port ( x0 : in std_logic_vector(15 downto 0);
+			  x1 : in std_logic_vector(15 downto 0);
+			  e : in std_logic;
+           y : out std_logic_vector(15 downto 0));
+end adder16;
+
+architecture b of adder16 is
+begin
+    process(e,x0,x1)
+    begin
+    if e='1'then
+		y<=x0*x1;
+	 end if ;
+  end process ;
+end b;  

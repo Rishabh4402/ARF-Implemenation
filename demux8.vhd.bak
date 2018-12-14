@@ -1,0 +1,58 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+--  Uncomment the following lines to use the declarations that are
+--  provided for instantiating Xilinx primitive components.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity demux8 is
+    Port ( x0,x1,x2,x3,x4,x5,x6,x7,x8,x9,x10,x11,x12,x13,x14,x15 : out std_logic_vector(15 downto 0);
+           s : in std_logic_vector(3 downto 0);
+           y : in std_logic_vector(15 downto 0));
+end demux8;
+
+architecture demux of demux8 is
+
+begin
+ process(y,s)
+  begin
+  case s is
+  when "0000" =>
+  x0<=y;
+   when "0001" =>
+  x1<=y;
+    when "0010" =>
+  x2<=y;
+   when "0011" =>
+  x3<=y;
+  when "0100" =>
+  x4<=y;
+  when "0101" =>
+  x5<=y;
+
+ when "0110" =>
+  x6<=y;
+ when "0111" =>
+  x7<=y;
+ when "1000" =>
+  x8<=y;
+ when "1001" =>
+  x9<=y;
+ when "1010" =>
+  x10<=y;
+ when "1011" =>
+  x11<=y;
+ when "1100" =>
+  x12<=y;
+ when "1101" =>
+  x13<=y;
+ when "1110" =>
+  x14<=y;
+  when others=>
+  x15<=y;
+  end case;
+  end process;
+  end demux;
